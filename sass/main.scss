@@ -1,0 +1,18 @@
+// Переменные
+@import './utils/variables';
+// Глобальние свойства
+@import './base/glob';
+
+// Хедер
+@import './components/header/header-page';
+
+// Уникальная часть главной страницы
+// Уникальная часть страницы портфолио
+
+// Футер
+@import './components/footer/footer-page';
+
+// Общие (повторяющиеся) компоненты
+@import './components/common/_logo';
+@import './components/common/address-block';
+@import './components/common/_icon-social';

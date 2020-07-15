@@ -1,0 +1,10 @@
+footer {
+  background-color: $background-dark;
+}
+.footer.container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
