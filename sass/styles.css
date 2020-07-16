@@ -388,7 +388,7 @@ a {
   /* or 171% */
   color: var(--text-primary);
 }
-/* Род деятельности (occupation) */
+/* Род деятельности (activity) */
 .section.activity {
   display: flex;
   flex-direction: column;

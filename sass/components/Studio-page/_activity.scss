@@ -1,0 +1,20 @@
+/* Род деятельности (activity) */
+.activity {
+  display: flex;
+  flex-direction: column;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  & .title-section {
+    align-self: center;
+    margin-bottom: 50px;
+  }
+  & .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  & .item + .item {
+    margin-left: 30px;
+  }
+}
