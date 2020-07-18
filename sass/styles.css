@@ -253,25 +253,6 @@ a {
   font-style: normal;
 }
 
-/* Модалка (бланк-форма) */
-/* бек-дроп */
-.modal {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  transition: var(--transition-duration) var(--function-of-time);
-
-  background: rgba(0, 0, 0, 0.2);
-}
 /* Герой */
 
 .hero-section {
@@ -567,6 +548,25 @@ a {
 .icon.klient6 {
   width: 88px;
   height: 45px;
+}
+/* Модалка (бланк-форма) */
+/* бек-дроп */
+.modal {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: var(--transition-duration) var(--function-of-time);
+
+  background: rgba(0, 0, 0, 0.2);
 }
 /* сама форма модалки */
 .form-blank {
