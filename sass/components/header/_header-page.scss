@@ -5,7 +5,7 @@
   justify-content: space-between;
 
   & .item:hover,
-  & .item:focus {
+  & .item:focus-within {
     color: $accent;
   }
 }
@@ -30,19 +30,23 @@
     margin-left: 50px;
   }
   /* Фишка "Мы тут" */
-  & .link.current {
-    position: relative;
-    color: $accent;
-  }
-  & .link.current::after {
-    content: '';
-    display: block;
-    margin-top: 28px;
-    position: absolute;
+  & .link {
+    @include transition(color);
 
-    width: 100%;
-    height: 4px;
-    background: $accent;
-    border-radius: 2px;
+    &.current {
+      position: relative;
+      color: $accent;
+    }
+    &.current::after {
+      content: '';
+      display: block;
+      margin-top: 28px;
+      position: absolute;
+
+      width: 100%;
+      height: 4px;
+      background: $accent;
+      border-radius: 2px;
+    }
   }
 }

@@ -4,6 +4,14 @@
 
   & .item {
     display: flex;
+
+    &:hover .icon,
+    &:focus-within .icon {
+      fill: $accent;
+    }
+    &:hover .link {
+      color: $accent;
+    }
   }
   & .button-icon {
     margin-right: 10px;
@@ -24,11 +32,7 @@
     background-size: contain;
     height: 16px;
     width: 16px;
-  }
-
-  & .icon:hover,
-  & .icon:focus {
-    fill: $accent;
+    @include transition(fill);
   }
 }
 .site-header .address-list {
