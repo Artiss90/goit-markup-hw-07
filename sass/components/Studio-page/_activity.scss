@@ -14,7 +14,19 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  & .item {
+    position: relative;
+  }
   & .item + .item {
     margin-left: 30px;
+  }
+  & .title.on-dark {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 27px;
+    text-align: center;
+
+    background-color: rgba(47, 48, 58, 0.8);
   }
 }

@@ -104,19 +104,23 @@
     transform: translateY(-50%);
     @include transition(fill);
   }
-  .label-policy {
+  & .label-policy {
     position: relative;
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+
+    &:focus-within .icon-checkbox {
+      border-color: $accent;
+    }
   }
-  .label-policy .link {
+  & .label-policy .link {
     color: $accent;
   }
-  .text-policy {
+  & .text-policy {
     line-height: 1.71;
   }
-  .icon-checkbox {
+  & .icon-checkbox {
     position: absolute;
     left: 2px;
     transform: translateY(3px);
@@ -137,9 +141,6 @@
     background-color: $accent;
     border-color: $accent;
   }
-  .label-policy:focus-within .icon-checkbox {
-    border-color: $accent;
-  }
   & .button {
     margin-top: 30px;
     /* width: 200px; */
@@ -147,10 +148,11 @@
     margin-right: auto;
     height: 50px;
     border: none;
-  }
-  & .button:hover,
-  & .button:focus {
-    background-color: #188ce8;
+
+    &:hover,
+    &:focus {
+      background-color: $button-hover;
+    }
   }
   .data-modal-close {
     width: 30px;
@@ -166,6 +168,11 @@
     padding: 0;
     border-width: 0;
     outline-color: rgba(0, 0, 0, 0);
+
+    &:hover .icon,
+    &:focus-within .icon {
+      fill: $accent;
+    }
   }
   .data-modal-close .icon {
     height: 30px;
@@ -173,9 +180,5 @@
     border-radius: 100%;
     border: solid 1px rgba(0, 0, 0, 0.1);
     @include transition(fill);
-  }
-  .data-modal-close:hover .icon,
-  .data-modal-close:focus-within .icon {
-    fill: $accent;
   }
 }
